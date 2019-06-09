@@ -5,8 +5,8 @@ require "mail_alternatives_with_attachments/version"
 Gem::Specification.new do |s|
   s.name        = "mail_alternatives_with_attachments"
   s.version     = MailAlternativesWithAttachments::VERSION
-  s.authors     = ["James Coleman"]
-  s.email       = ["jtc331@gmail.com"]
+  s.authors     = ["James Coleman", "Alex Martin"]
+  s.email       = ["jtc331@gmail.com", "martin.alex.t@gmail.com"]
   s.homepage    = "https://github.com/jcoleman/mail_alternatives_with_attachments"
   s.summary     = %q{This gem makes it easy to send multipart alternative emails from ActionMailer 3}
   s.description = %q{ActionMailer 3 makes it much easier to send emails, but there is one case it doesn't handle well.\
@@ -19,8 +19,5 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
-  s.add_runtime_dependency "actionmailer", "~> 4.0"
+  s.add_runtime_dependency "actionmailer", ">= 5.0"
 end
